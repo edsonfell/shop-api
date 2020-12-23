@@ -13,7 +13,7 @@ namespace Backoffice.Controllers
         public async Task<ActionResult<dynamic>> Get([FromServices] DataContext context)
         {
             var employee = new User { Id = 1, Username = "robin", Password = "robin123"};
-            var manager = new User { Id = 1, Username = "batman", Password = "batman123"};
+            var manager = new User { Id = 2, Username = "batman", Password = "batman123"};
             var category = new Category { Id = 1, Title = "Geral"};
             var product = new Product { Id = 1, Title = "iPhone", Description = "iPhone 12 Lançamento", Price = 12000, Category = category};
             context.Users.Add(employee);
